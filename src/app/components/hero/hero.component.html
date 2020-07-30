@@ -1,0 +1,24 @@
+<div class="animated fadeIn fast">
+    <h1>{{hero.nombre | uppercase}} <small>{{hero.aparicion | date: 'y'}}</small></h1>
+    <hr />
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="card mb-3 p-2">
+                <div class="row no-gutters">
+                    <div class="col-md-2">
+                        <img [src]="hero.img" class="card-img" [alt]="hero.nombre" [title]="hero.nombre">
+                        <a class="btn btn-outline-danger btn-block mt-2" routerLink="/heroes">Regresar</a>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="card-body">
+                            <h5 class="card-title">{{hero.nombre}}</h5>
+                            <p class="card-text">{{hero.bio}}</p>
+                            <p class="card-text"><small class="text-muted">{{hero.aparicion}}</small></p>
+                            <p class="card-text"><small class="text-muted">{{hero.casa}}</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

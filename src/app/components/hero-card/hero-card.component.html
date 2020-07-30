@@ -1,0 +1,9 @@
+<div class="card p-2">
+    <img [src]="hero.img" class="card-img-top" [alt]="hero.nombre" [title]="hero.nombre">
+    <div class="card-body">
+        <h5 class="card-title">{{hero.nombre}}</h5>
+        <p class="card-text">{{hero.bio | slice:0:150}}...</p>
+        <p class="card-text"><small class="text-muted">{{hero.aparicion}}</small></p>
+        <button (click)="heroDetails()" class="btn btn-outline-primary btn-block">Ver Más</button>
+    </div>
+</div>
